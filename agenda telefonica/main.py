@@ -1,6 +1,23 @@
+import json
+import os
+
 contatos = []
+
+def salvar_contatos():
+    with open('contatos.json', 'w') as arquivo:
+        json.dump(contatos, arquivo)
+        
+def carregar_contatos():
+    arquivo_contatos = './contatos.json'
+    if os.path.exists(arquivo_contatos):
+        with open(arquivo_contatos, 'r') as arquivo:
+            return json.load(arquivo) 
+    else:
+        print('Arquivo de contatos não encontrado.')
+        return []
+
 def cadastro_contato():
-    print('\n#' * 5 + ' Cadastro Contato ' + '#'*5)
+    print('\n'+'#' * 5 + ' Cadastro Contato ' + '#'*5)
 
     while True:
         nome = input('Nome: ')
@@ -8,6 +25,7 @@ def cadastro_contato():
 
         contato = {'nome': nome, 'telefone': telefone}
         contatos.append(contato)
+        salvar_contatos()
 
         continua = input('Adicionar outro contato: sim/nao: ')
         if continua.lower() != 'sim':
@@ -37,4 +55,5 @@ def agenda_telefonica():
 
 
 if __name__ == '__main__':
+    contatos = carregar_contatos()
     agenda_telefonica()
