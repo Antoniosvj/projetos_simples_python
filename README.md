@@ -8,6 +8,9 @@ Neste repositorio estarei postando pequenos projetos em python
 
 ##3º - Tabuada
 
+##4º - renomeador de arquivos
+obs.: pode ser feito uma melhoria para filtrar por tipo de arquivo que queira renomear
+
 Jogo da Forca
 
 Gerador de senhas - programa que gere senhas aleatórias e seguras, levando em consideração critérios como comprimento e uso de caracteres especiais.
