@@ -2,14 +2,16 @@
 
 Neste repositorio estarei postando pequenos projetos em python
 
-##1º - Agenda telefonica
+## 1º - Agenda telefonica
 
-##2º - Calculadora
+## 2º - Calculadora
 
-##3º - Tabuada
+## 3º - Tabuada
 
-##4º - renomeador de arquivos
+## 4º - renomeador de arquivos
 obs.: pode ser feito uma melhoria para filtrar por tipo de arquivo que queira renomear
+
+## 5 - Lista de Tarefas
 
 Jogo da Forca
 
